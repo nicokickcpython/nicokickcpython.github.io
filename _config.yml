@@ -6,8 +6,9 @@ lang: zh-CN
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-minimal
 permalink: /posts/:title/
+url: https://nicokickcpython.github.io
+plugins: []
 
 # 排除 autopublish 无关文件
 exclude:
