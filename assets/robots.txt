@@ -1,0 +1,7 @@
+---
+layout: null
+---
+User-agent: *
+Allow: /
+
+Sitemap: https://nicokickcpython.github.io/sitemap.xml
