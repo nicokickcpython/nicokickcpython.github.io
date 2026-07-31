@@ -1,0 +1,23 @@
+---
+layout: null
+---
+> 技术博客 — 个人技术文章，内容同步发布到多平台（博客园/Dev.to/掘金等）。
+> 本文件遵循 /llms.txt 规范，为 LLM 和 agent 提供本站内容的精炼导航。
+
+## 技术博客
+
+- 作者: nicokickcpython
+- 内容: 技术教程、开发经验、自动化工具实践（Python / 自动化 / 开源）
+- 语言: 中文为主
+
+## 重要链接
+
+- [博客首页](https://nicokickcpython.github.io/)
+- [RSS 订阅](https://nicokickcpython.github.io/feed.xml)
+- [文章索引 (JSON)](https://nicokickcpython.github.io/posts.json)
+
+## 文章
+
+{% for post in site.posts %}
+- [{{ post.title }}](https://nicokickcpython.github.io{{ post.url }}) — {{ post.excerpt | strip_html | strip_newlines | truncate: 80 }}
+{% endfor %}
