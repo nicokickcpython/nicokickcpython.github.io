@@ -12,7 +12,7 @@ layout: null
       "slug": {{ post.slug | jsonify }},
       "url": {{ post.url | jsonify }},
       "date": {{ post.date | date: "%Y-%m-%d" | jsonify }},
-      "tags": {{ post.tags | default: [] | jsonify }},
+      "tags": {% if post.tags %}{{ post.tags | jsonify }}{% else %}[]{% endif %},
       "raw": {{ "https://raw.githubusercontent.com/nicokickcpython/nicokickcpython.github.io/main/" | append: post.path | jsonify }}
     }{% unless forloop.last %},{% endunless %}
   {% endfor %}
